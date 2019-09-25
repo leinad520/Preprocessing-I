@@ -137,16 +137,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 1.25%;
-  border: 1px solid black;
   font-size: 62.5%;
-}
-h1 {
-  font-size: 3.5rem;
-}
-h2 {
-  font-size: 2.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 p {
   font-size: 1.5rem;
@@ -155,8 +146,55 @@ section {
   border-bottom: 1px solid black;
   padding-bottom: 1rem;
 }
-section.headline {
+section h1 {
+  font-size: 3.5rem;
+}
+section h2 {
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(137, 43, 226, 0.516);
+  }
+}
+@media (max-width: 500px) {
+  section p {
+    text-align: center;
+  }
+}
+.headline {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.5;
+  border-bottom: 1px solid black;
+}
+nav a {
+  text-decoration: none;
+  color: blueviolet;
+}
+@media (max-width: 500px) {
+  nav a {
+    color: #3722f6;
+  }
+}
+#number {
+  color: blueviolet;
+}
+@media (max-width: 500px) {
+  #number {
+    color: #3722f6;
+  }
 }
